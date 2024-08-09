@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Weather Forecast App</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <h2>Weather Forecast App</h2>
+            <p>Stay Updated with Accurate Weather Forecasts</p>
+            <a href="#weather" class="btn">View Weather</a>
+        </section>
+
+        <!-- Insights Section -->
+        <section id="insights" class="section">
+            <div class="card insights-card">
+                <div class="insights-text">
+                    <p>Weather Insights</p>
+                    <h3>Stay ahead of the weather with detailed insights.</h3>
+                    <p>Weather Forecast Application is designed to provide you with the most accurate and timely weather updates available. Whether you're planning your week, preparing for a trip, or simply curious about the current weather conditions, this app offers reliable forecasts and real-time data. By leveraging advanced meteorological models and vast datasets, we ensure that you have access to precise weather predictions. This user-friendly interface allows you to effortlessly search for any city and get comprehensive weather information, helping you make informed decisions and stay prepared for any weather conditions.</p>
+                </div>
+                <img src="images/weather-insights.jpg" class="insights-image" alt="Weather Insights">
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services-section">
+            <h2>Accurate Weather Forecasting</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/current-weather.jpg" class="service-image" alt="Feature 1">
+                    <h3>Current Weather Conditions</h3>
+                    <p>Get real-time weather updates at your fingertips.</p>
+                </div>
+                <div class="card">
+                    <img src="images/5-day-forecast.jpg" class="service-image" alt="Feature 2">
+                    <h3>5-Day Weather Forecast</h3>
+                    <p>Plan your week with our detailed forecast.</p>
+                </div>
+                <div class="card">
+                    <img src="images/city-search.jpg" class="service-image" alt="Feature 3">
+                    <h3>City Search Feature</h3>
+                    <p>Find weather updates for any city worldwide.</p>
+                </div>
+                <div class="card">
+                    <img src="images/responsive-design.jpg" class="service-image" alt="Feature 4">
+                    <h3>Responsive Design</h3>
+                    <p>Access weather information on any device easily.</p>
+                </div>
+                <div class="card">
+                    <img src="images/user-friendly-interface.jpg" class="service-image" alt="Feature 5">
+                    <h3>User-Friendly Interface</h3>
+                    <p>navigate through weather data effortlessly.</p>
+                </div>
+                <div class="card">
+                    <img src="images/get-weather.jpg" class="service-image" alt="Feature 6">
+                    <h3>Get Weather Updates</h3>
+                    <p>Stay informed with the timely weather notifications.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather" class="section">
+            <div class="card">
+                <h2>Get Weather</h2>
+                <form id="weather-form">
+                    <input type="text" id="location" placeholder="Enter city name" required>
+                    <button type="submit">Get Weather</button>
+                </form>
+                <div id="weather-result"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="card">
+                <h2>Contact Us</h2>
+                <p>Name: Immaculate Atieno Gumbo</p>
+                <p>Email: atienoemmaculate61@gmail.com</p>
+                <p>Phone: +254768221897 , +254707088876</p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
+

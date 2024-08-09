@@ -1,0 +1,246 @@
+/* Add these styles to your existing styles.css file */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-photo/shining-sun-clear-blue-sky_1160-293.jpg?size=626&ext=jpg&ga=GA1.1.1582821251.1722103377&semt=ais_user');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.5em;
+    margin: 0;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.hero-section h2 {
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin: 0 0 30px;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    margin-top: 80px; /* Adjusted for fixed header */
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* Card Styles */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card img.service-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Form and Input Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input {
+    flex: 1;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, outline 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Weather Result Styles */
+#weather-result {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+.forecast-day {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.forecast-day:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-day img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .forecast-day {
+        width: 100px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Add this to ensure the services are displayed in a row */
+.services-section .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services-section .card {
+    flex: 1 1 30%;
+    margin: 10px;
+    max-width: calc(33.33% - 20px); /* Adjust the width based on the margin */
+    box-sizing: border-box;
+}
+
+/* Add this for the insights section */
+.insights-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.insights-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.insights-image {
+    flex: 1;
+    max-width: 50%; /* Make the image occupy 50% of the space */
+    height: auto;
+}
+
