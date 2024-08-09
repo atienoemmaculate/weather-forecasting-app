@@ -24,5 +24,5 @@ A web application that provides weather forecasts based on the city entered by t
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/weather-forecast.git
-cd weather-forecast
+git clone https://github.com/atienoemmaculate/weather-forecasting-app.git
+cd weather-forecasting-app
